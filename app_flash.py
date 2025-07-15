@@ -48,7 +48,7 @@ def generar_respuesta(pregunta, contexto):
             [instruccion, pregunta],
             generation_config={
                 "temperature": 0.7,
-                "max_output_tokens": 512
+                "max_output_tokens": 300
             }
         )
         return response.text
